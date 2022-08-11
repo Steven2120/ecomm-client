@@ -1,0 +1,158 @@
+.navbar {
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(84, 141, 233);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    z-index: 50;
+}
+
+.home__header {
+    text-decoration: none;
+}
+
+.navbar__logo h2 {
+    color: #f4f4f4;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.navbar__logo h2:hover {
+    color: #ff13b0;
+}
+
+.navbar__links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-left: 7rem;
+}
+
+.navbar__links > li {
+    padding-left: 1.5rem;
+}
+
+.navbar__links > li > a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__links > li > a > span {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.cart__link {
+    background: #89ABE3FF;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.cart__link:hover {
+    background-color: #dd219e;
+    color: #f4f4f4;
+}
+
+.cartlogo__badge {
+    width: 30px;
+    height: 30px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    margin-left: 8px;
+    color: #171717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.return__link > span:hover {
+    color: #ff13b0;
+}
+
+.welcome {
+    color: #f4f4f4;
+}
+
+.logged__out:hover {
+    color: #ff13b0;
+}
+
+.logged__in:hover {
+    color: #ff13b0;
+}
+
+.register:hover {
+    color: #ff13b0;
+}
+
+.sun__btn {
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    border: none;
+    color: #dd219e;
+    cursor: pointer;
+}
+
+.moon__btn {
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    border: none;
+    color: #dd219e;
+    cursor: pointer;
+}
+
+.hamburger__menu {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hamburger__menu > div {
+    width: 100%;
+    height: 3px;
+    background: #f4f4f4;
+}
+
+.hamburger__menu:hover > div {
+    background-color: #dd219e;
+}
+
+@media (max-width: 960px) {
+    .navbar__links {
+        display: none;
+    }
+
+    .sun__btn {
+        display: block;
+    }
+
+    .moon__btn {
+        display: block;
+    }
+
+    .hamburger__menu {
+        display: flex;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .navbar__logo > h2 {
+        font-size: 1rem;
+    }
+}

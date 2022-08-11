@@ -1,0 +1,35 @@
+.checkout__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+    background-image: url("../assets/images/under-construction.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.checkout__statement {
+    font-size: 1.5rem;
+    margin: 2rem;
+    color: rgb(103, 140, 199);
+    margin-bottom: 5rem;
+}
+
+@media (max-width: 850px) {
+    .checkout__statement {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .checkout__statement {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .checkout__statement {
+        font-size: .7rem;
+    }
+}

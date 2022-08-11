@@ -1,0 +1,212 @@
+.login-container {
+    height: 105vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/images/delivery.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
+.login__form {
+    margin-bottom: 7rem;
+}
+
+.login__title {
+    color: #f4f4f4;
+    font-size: 3em;
+    text-align: center;
+}
+
+.form__group {
+    height: auto;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__group > * {
+    margin-bottom: .5rem;
+    outline: none;
+}
+
+.error__message {
+    color: red;
+    margin: .5rem;
+}
+
+.login__form > .error__message {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    text-align: center;
+    color: #f4f4f4;
+}
+
+.login__screen__forgot__pass {
+    margin-top: .5rem;
+    text-align: center;
+    text-decoration: none;
+    color: #ff13b0;
+}
+
+.login__btn__div {
+    margin: auto !important;
+}
+
+.login__btn {
+    height: 2rem;
+    width: 9rem;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #f4f4f4;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.login__btn:hover {
+    background-color: #ff13b0;
+    transition: background-color .8s ease-in-out;
+}
+
+.not__registered {
+    color:#f4f4f4;
+}
+
+.register__link {
+    text-decoration: none;
+    color: #ff13b0;
+    font-size: 1em;
+}
+
+@media (max-width: 850px) {
+    .login__form {
+        margin-bottom: 5rem;
+    }
+    
+    .login__title {
+        font-size: 2em;
+    }
+    
+    .form__group > * {
+        margin-bottom: .5rem;
+    }
+
+    .login__label {
+        font-size: .9em !important;
+    }
+    
+    #email {
+        font-size: .8em;
+    }
+
+    #password {
+        font-size: .8em;
+    }
+    
+    .login__btn {
+        height: 2rem;
+        width: 6rem;
+        font-size: .8em;
+    }
+    
+    .register__link {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 550px) {
+    
+    .login__title {
+        font-size: 1.7em;
+    }
+    
+    .form__group > * {
+        margin-bottom: .3rem !important;
+    }
+
+    .login__label {
+        font-size: .7em !important;
+    }
+    
+    #email {
+        font-size: .7em;
+    }
+
+    #password {
+        font-size: .7em;
+    }
+
+    .login__screen__forgot__pass {
+        font-size: .8em !important;
+    }
+    
+    .login__btn {
+        height: 2rem;
+        width: 6rem;
+        font-size: .7em;
+    }
+
+    .not__registered {
+        font-size: .8em;
+    }
+    
+    .register__link {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 420px) {
+    
+    .login__title {
+        font-size: 1.4em;
+    }
+    
+    .form__group > * {
+        margin-bottom: .2rem !important;
+    }
+
+    .login__label {
+        font-size: .7em !important;
+    }
+    
+    #email {
+        font-size: .6em;
+    }
+
+    #password {
+        font-size: .6em;
+    }
+
+    .login__screen__forgot__pass {
+        font-size: .7em !important;
+    }
+    
+    .login__btn {
+        height: 2rem;
+        width: 6rem;
+        font-size: .6em;
+    }
+
+    .not__registered {
+        font-size: .7em;
+    }
+    
+    .register__link {
+        font-size: .8em;
+    }
+}
+
+@media (max-height: 560px) {
+    .login__form {
+        margin: auto;
+        height: 98%;
+    }
+
+    .login__form > *{
+        margin: auto;
+    }
+}

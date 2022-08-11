@@ -1,0 +1,120 @@
+.cart__info__screen {
+    display: flex;
+    max-width: 1300px;
+    margin-top: 2.1rem auto;
+}
+
+.cart__info__left > h2 {
+    margin-bottom: 1.1rem;
+    font-size: 2em;
+    color: rgb(112, 148, 206);
+}
+
+.empty__message {
+    font-size: 1.3rem;
+    color: rgb(112, 148, 206);
+}
+
+.empty__message > a {
+    font-size: 1.3rem;
+    color: rgb(112, 148, 206);
+}
+
+.empty__message > a:hover {
+    font-size: 1.3rem;
+    color: #df58b2;
+}
+
+.cart__info__left {
+    flex: .7;
+    margin-right: 1.1rem;
+    background-color: transparent;
+    padding: 1.1rem;
+}
+
+.cart__info__right {
+    flex: .3;
+    background-color: #fff;
+    box-shadow: 0 3px 6px #89ABE3FF;
+    height: fit-content;
+    margin-top: 4.7rem;
+}
+
+.cart__info__right div {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 1.1rem;
+}
+
+.cart__info__right div:last-child {
+    border: none;
+}
+
+.info p {
+    padding: 9px;
+}
+
+.cart__info__right div button {
+    padding: 11px 17px;
+    width: 100%;
+    background-color: #89ABE3FF;
+    color: #f4f4f4;
+    border: 1px solid #171717;
+    cursor: pointer;
+}
+
+.proceed__to__checkout__btn__div > a > button {
+    height: auto;
+}
+
+.cart__info__right div button:hover {
+    background-color: #df58b2;
+}
+
+@media (max-width: 1300px) {
+    .cart__info__screen {
+        max-width: 910px;
+    }
+}
+
+@media (max-width: 920px) {
+    .cart__info__screen {
+        max-width: 790px;
+        flex-direction: column;
+    }
+
+    .cart__info__left {
+        margin: 0;
+    }
+
+    .cart__info__right {
+        margin: 1.1rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .cart__title {
+        font-size: 1.5rem !important;
+    }
+
+    .empty__message {
+        font-size: 1rem;
+    }
+    
+    .empty__message > a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .cart__title {
+        font-size: 1.2rem !important;
+    }
+
+    .empty__message {
+        font-size: .8rem;
+    }
+    
+    .empty__message > a {
+        font-size: .8rem;
+    }
+}
