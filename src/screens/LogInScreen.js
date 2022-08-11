@@ -20,7 +20,7 @@ const LogInScreen = () => {
 
     try {
       const { data } = await axios.post(
-        "/api/auth/login",
+        `${process.env.REACT_APP_URL_ENDPOINT}/api/auth/login`,
         { email, password },
         config
       );
