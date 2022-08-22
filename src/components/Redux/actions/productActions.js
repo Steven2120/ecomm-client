@@ -3,7 +3,9 @@ import axios from "axios";
 
 export const fetchProducts = () => async (dispatch) => {
   try {
-    const { data } = await axios.get("/api/products");
+    const { data } = await axios.get(
+      `${process.env.REACT_APP_URL_ENDPOINT}/api/products`
+    );
 
     dispatch({ type: actionTypes.GET_PRODUCTS_REQ });
 
@@ -24,7 +26,9 @@ export const fetchProducts = () => async (dispatch) => {
 
 export const getProductDetails = (id) => async (dispatch) => {
   try {
-    const { data } = await axios.get(`/api/products/${id}`);
+    const { data } = await axios.get(
+      `${process.env.REACT_APP_URL_ENDPOINT}/api/products/${id}`
+    );
 
     dispatch({
       type: actionTypes.GET_PRODUCTS_REQ,

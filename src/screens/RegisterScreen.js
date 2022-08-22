@@ -38,9 +38,8 @@ const RegisterScreen = () => {
     }
 
     try {
-      const urlEndpoint = process.env.REACT_APP_URL_ENDPOINT;
       const { data } = await axios.post(
-        `${urlEndpoint}/api/auth/register`,
+        `${process.env.REACT_APP_URL_ENDPOINT}/api/auth/register`,
         { firstName, lastName, username, email, password },
         config
       );

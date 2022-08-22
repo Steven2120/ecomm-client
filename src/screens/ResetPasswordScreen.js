@@ -32,7 +32,7 @@ const ResetPasswordScreen = () => {
 
     try {
       const { data } = await axios.put(
-        `/api/auth/resetpassword/${params.resetToken}`,
+        `${process.env.REACT_APP_URL_ENDPOINT}/api/auth/resetpassword/${params.resetToken}`,
         {
           password,
         },
